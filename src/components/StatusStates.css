@@ -1,0 +1,50 @@
+.status-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  padding: 56px 24px;
+  color: var(--text-muted);
+}
+
+.status-loading .loading-mark {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.status-block h3 {
+  font-size: 1.05rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.status-hint {
+  font-size: 0.88rem;
+  max-width: 320px;
+  color: var(--text-faint);
+  line-height: 1.5;
+}
+
+.retry-btn {
+  margin-top: 4px;
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.retry-btn:hover {
+  background: var(--danger);
+  color: var(--bg);
+}
